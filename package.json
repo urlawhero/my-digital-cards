@@ -4,7 +4,14 @@
   "workspaces": [
     "apps/*"
   ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "build": "echo 'Main build skipped'"
+    "build": "echo 'ROOT BUILD SKIPPED' && exit 0",
+    "install": "npm install --workspaces"
+  },
+  "devDependencies": {
+    "prettier": "latest"
   }
 }
